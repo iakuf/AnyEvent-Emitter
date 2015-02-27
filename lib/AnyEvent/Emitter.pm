@@ -2,9 +2,9 @@ package AnyEvent::Emitter;
 use strict;
 use Scalar::Util qw(blessed weaken);
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
-use constant DEBUG => $ENV{EVENTEMITTER_DEBUG} || 0;
+use constant DEBUG => $ENV{EMITTER_DEBUG} || 0;
 
 sub new {
     my $class = shift;
@@ -72,7 +72,7 @@ sub unsubscribe {
 
 =head1 NAME
 
-AnyEvent::Emitter - Event emitter base class (Mojo::Emitter porting).
+AnyEvent::Emitter - Event emitter base class (Mojo::EventEmitter porting).
 
 =head1 SYNOPSIS
 
@@ -98,7 +98,7 @@ AnyEvent::Emitter - Event emitter base class (Mojo::Emitter porting).
 
 =head1 DESCRIPTION
 
-L<AnyEvent::Emitter> is a simple base class for event emitting objects(Mojo::Emitter porting).
+L<AnyEvent::Emitter> is a simple base class for event emitting objects(Mojo::EventEmitter porting).
 
 =head1 EVENTS
 
